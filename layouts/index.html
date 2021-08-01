@@ -57,9 +57,6 @@
         {{ if eq (os.Stat .File.Dir).Name "projects" }}
             <!-- Now for some cool projects -->
             {{ partial "home/projects.html" . }}
-        {{ else if eq (os.Stat .File.Dir).Name "blog" }}
-            <!-- Let`s show some blog posts -->
-            {{ partial "home/blog.html" . }}
         {{ else }}
 
         <!-- Range through all sections in /home execept contact.md -->
